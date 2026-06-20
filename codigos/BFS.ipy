@@ -1,38 +1,34 @@
-# # Instanciando Grafo
-# Graph = [[1, 2], [3], [3, 4], [5], [5], []]
+# Instanciando Grafo
+Graph = [[1, 2], [3], [3, 4], [5], [5], []]
 
-# # Lista das cores dos grafos
-# color = [0] * len(Graph)
-# # Lista das predecessores
-# pi = [0] * len(Graph)
-# # Lista de tempo ao ser visitado
-# d = [0] * len(Graph)
-# # Fila para BFS
-# queue = []
+# Lista das cores dos grafos
+color = [0] * len(Graph)
+# Lista das predecessores
+pi = [0] * len(Graph)
+# Lista de tempo ao ser visitado
+d = [0] * len(Graph)
+# Fila para BFS
+queue = []
 
-# # Definindo cores
-# WHITE = -1
-# GRAY = 0
-# BLACK = 1
+# Definindo cores
+WHITE = -1
+GRAY = 0
+BLACK = 1
 
-# # Definindo constantes
-# NIL = None
-# INF = None
+# Definindo constantes
+NIL = None
+INF = None
 
-# def bfs(G, inital_vertex):
-#     for vertex in range((G - {inital_vertex})):
-#         color[vertex] = WHITE
-#         d[vertex] = INF
-#         pi[vertex] = NIL
-#     color[inital_vertex] = GRAY
-#     d[inital_vertex] = 0
-#     pi[inital_vertex] = NIL
-#     queue.append(inital_vertex)
-#     return
+def bfs(G, inital_vertex):
+    for vertex in range((G - {inital_vertex})):
+        color[vertex] = WHITE
+        d[vertex] = INF
+        pi[vertex] = NIL
+    color[inital_vertex] = GRAY
+    d[inital_vertex] = 0
+    pi[inital_vertex] = NIL
+    queue.append(inital_vertex)
+    return
 
-# print(Graph - {1,2})
+print(Graph - {1,2})
 
-teste = []
-teste.append('w')
-teste.append('r')
-print(teste)
