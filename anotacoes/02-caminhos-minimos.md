@@ -9,7 +9,7 @@ Resolve o problema de caminhos mais curtos de única origem em um grafo ponderad
     - 0 para a fonte
     - infinito para todos os outros
 - Enquanto existirem vértices não visitados:
-    - Escolher o vértice não visitado com menor distância na tabela
+    - Escolher o vértice não visitado com menor distância na tabela, vizinho de algum já visitado
     - Marcar esse vértice como visitado
     - Para cada vizinho dele:
         - Calcular distância alternativa (distância atual + peso da aresta)
