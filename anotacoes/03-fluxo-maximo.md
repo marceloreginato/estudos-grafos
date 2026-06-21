@@ -40,7 +40,6 @@ O teorema diz que o fluxo máximo é igual a capacidade do corte mínimo
 
 ## Algoritmo de Ford-Fulkerson
 
-
 - Fluxo = 0 em todas as arestas
 - Usa a rede residual (inicial = capacidades)
     - Enquanto existe caminho aumentador s -> t
@@ -51,3 +50,6 @@ O teorema diz que o fluxo máximo é igual a capacidade do corte mínimo
     - Soma nas arestas reversas
     - repete
 
+Complexidade: O(E * f)
+- E: Numero de arestas
+- f: flow máximo
