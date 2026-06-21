@@ -2,7 +2,7 @@
 
 ### Algoritimo Dijkstra
 
-Resolve o problema de caminhos mais curtos de única origem em um grafo ponderado G(V, E), todos os pesos são não negativos. O algoritmo mantém um conjunto S de vértices com pesos finais desde a origem s já computados.
+Resolve o problema de caminhos mais curtos de única origem em um grafo ponderado G(V, E), todos os pesos são não negativos. O algoritmo mantém um conjunto S de vértices com pesos finais desde a origem s já computados. Algoritmo guloso.
 
 - Lista de vértices não visitados
 - Tabela de distâncias da fonte:
@@ -35,7 +35,7 @@ Complexidade: **O(V + E)**
 
 ### Algoritmo Bellman-Ford
 
-Resolve caminhos mínimos de fonte única no caso geral (arestas podem ser negativas). Devolve um valor booleano indicando se existe ou não um ciclo negativo que pode ser alcançado da fonte, se o ciclo negativo não existir produz o caminho mínimo.
+Resolve caminhos mínimos de fonte única no caso geral (arestas podem ser negativas). Devolve um valor booleano indicando se existe ou não um ciclo negativo que pode ser alcançado da fonte, se o ciclo negativo não existir produz o caminho mínimo. Não é algoritmo guloso.
 
 - Criar uma tabela de distâncias:
   - 0 para o vértice de origem
