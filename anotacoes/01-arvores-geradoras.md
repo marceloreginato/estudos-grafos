@@ -58,6 +58,10 @@ Para encontrar a árvore geradora mínima temos 3 algoritmos:
     - Escolher a de menor valor
     - Adicionar o novo vértice a lista visitados
 
+Complexidade:
+- Matriz de Adjacência: **O(V^2)**
+- Heap Binária e Lista de Adjacência: **O(V log V + E log V)**
+
 ### Algoritmo Kruskal
 
 - Ordenar as arestas por peso crescente
@@ -67,3 +71,5 @@ Para encontrar a árvore geradora mínima temos 3 algoritmos:
     - Escolher a próxima aresta de menor valor
     - Adicionar à árvore se não formar ciclo
     - Ignorar se formar ciclo
+
+Complexidade com Merge Sort: **O(E log E)**
