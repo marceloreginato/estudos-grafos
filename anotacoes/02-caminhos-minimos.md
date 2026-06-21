@@ -2,6 +2,8 @@
 
 ### Algoritimo Dijkstra
 
+Resolve o problema de caminhos mais curtos de única origem em um grafo ponderado G(V, E), todos os pesos são não negativos. O algoritmo mantém um conjunto S de vértices com pesos finais desde a origem s já computados.
+
 - Lista de vértices não visitados
 - Tabela de distâncias da fonte:
     - 0 para a fonte
@@ -18,6 +20,8 @@ Complexidade: **O(|E| + |V| log |V|)**
 
 ### Algoritimo Caminhos mínimos de fonte única em grafos acíclicos dirigidos
 
+Relaxa-se as arestas de acordo com uma ordenação topológica.
+
 - Criar uma tabela de distâncias:
     - 0 para o vértice de origem
     - infinito para todos os outros
@@ -30,6 +34,8 @@ Complexidade: **O(|E| + |V| log |V|)**
 Complexidade: **O(V + E)**
 
 ### Algoritmo Bellman-Ford
+
+Resolve caminhos mínimos de fonte única no caso geral (arestas podem ser negativas). Devolve um valor booleano indicando se existe ou não um ciclo negativo que pode ser alcançado da fonte, se o ciclo negativo não existir produz o caminho mínimo.
 
 - Criar uma tabela de distâncias:
   - 0 para o vértice de origem
