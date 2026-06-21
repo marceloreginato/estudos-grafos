@@ -50,6 +50,8 @@ Para encontrar a árvore geradora mínima temos 3 algoritmos:
 
 ### Algoritmo de Prim
 
+É um algoritmo guloso.
+
 - Utilizar lista de visitados
 - Adicionar o primeiro vértice a lista
 
@@ -63,6 +65,8 @@ Complexidade:
 - Heap Binária e Lista de Adjacência: **O(V log E)**
 
 ### Algoritmo Kruskal
+
+Mais eficiente que Prim em grafos esparsos. Considera se cada aresta individualmente pode ou não pertencer à árvore geradora mínima analisando-as em ordem crescente de custo. É um algoritmo guloso.
 
 - Ordenar as arestas por peso crescente
 - Inicializar cada vértice como um conjunto separado
