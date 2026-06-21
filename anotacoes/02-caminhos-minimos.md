@@ -14,6 +14,8 @@
         - Se essa distância for menor que a registrada na tabela:
         - Atualizar a tabela de distâncias
 
+Complexidade: **O(|E| + |V| log |V|)**
+
 ### Algoritimo Caminhos mínimos de fonte única em grafos acíclicos dirigidos
 
 - Criar uma tabela de distâncias:
@@ -24,6 +26,8 @@
     - Para cada aresta que sai desse vértice:
         - Se a distância do vértice atual + peso da aresta for menor que a distância do destino:
             - Atualizar a distância do destino (relaxamento)
+    
+Complexidade: **O(V + E)**
 
 ### Algoritmo Bellman-Ford
 
@@ -38,3 +42,5 @@
 - Percorrer todas as arestas mais uma vez:
   - Se ainda for possível diminuir alguma distância:
     - Existe um ciclo de peso negativo acessível a partir da origem
+
+Complexidade: **O(|V| * |E|)**
